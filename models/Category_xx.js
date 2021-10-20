@@ -13,8 +13,7 @@ const Category_xx = class Category_xx {
   // get all categories
   static async fetchAll() {
     try {
-      let results = await db.query(`SELECT * from category`);
-      console.log('results', JSON.stringify(results.rows));
+      let results = await db.query(`SELECT * from category_xx`);
       return results.rows;
     } catch (e) {
       console.log('error', e);
@@ -22,4 +21,11 @@ const Category_xx = class Category_xx {
   }
 };
 
+
+// const test = async () => { 
+//   let results = await Category_xx.fetchAll();
+//   console.log('results', JSON.stringify(results.rows));
+// }
+
+// test();
 module.exports = Category_xx;
