@@ -5,8 +5,8 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
   res.render('index', {
     title: 'Express',
-    name: 'Hsingtai Chung',
-    id: '123456789',
+    name: 'Tzuchia Huang',
+    id: '209410215',
   });
 });
 

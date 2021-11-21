@@ -1,6 +1,6 @@
-const db = require('../utils/database');
+const db = require('../../utils/database');
 
-const Category_xx = class Category_xx {
+const Category_15 = class Category_15 {
   constructor(id, name, size, remote_url, local_url, link_url) {
     this.id = id;
     this.name = name;
@@ -13,7 +13,7 @@ const Category_xx = class Category_xx {
   // get all categories
   static async fetchAll() {
     try {
-      let results = await db.query(`SELECT * from category_xx`);
+      let results = await db.query(`SELECT * from category_15`);
       return results.rows;
     } catch (e) {
       console.log('error', e);
@@ -21,11 +21,10 @@ const Category_xx = class Category_xx {
   }
 };
 
-
-// const test = async () => { 
+// const test = async () => {
 //   let results = await Category_xx.fetchAll();
 //   console.log('results', JSON.stringify(results.rows));
 // }
 
 // test();
-module.exports = Category_xx;
+module.exports = Category_15;
