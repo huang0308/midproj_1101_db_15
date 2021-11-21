@@ -11,7 +11,8 @@ exports.getCategories = async (req, res) => {
 
 exports.getShop = async (req,res) => {
   try{
-
+    const data = await serviceCrown2Controller_15.getShop();
+    return res.json(data);
   } catch (err) {
     res.status(404).json(err);
   }

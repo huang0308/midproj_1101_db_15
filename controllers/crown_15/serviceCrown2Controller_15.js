@@ -13,7 +13,7 @@ exports.getCategories = async (req, res) => {
   try {
     return await Shop_15.fetchAll();
   } catch (err) {
-    console.log('getCategories', err);
+    console.log('getShop', err);
   }
 };
 
